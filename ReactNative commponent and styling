@@ -1,0 +1,41 @@
+import * as a from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+class App extends a.Component {
+  // inline style on first.
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={{ fontSize: 20, padding: 10, margin: 10, borderWidth: 3 }}>
+          {' '}
+          hello
+        </Text>
+        <Text style={[styles.baseText, styles.selctedText]}> hello</Text>
+        <Text style={styles.baseText}> hello</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex:1,// take all size of row
+    backgroundColor: 'gray',
+    justifyContent: 'space-around',
+    flexDirection: 'row',
+    alignItems:'center',
+    paddingTop: 20,
+  },
+  baseText: {
+
+    fontSize: 18,
+    padding: 10,
+    margin: 10,
+    borderWidth: 3,
+  },
+  selctedText: {
+   
+    backgroundColor: '#ff5',
+    fontWeight: 'bold',
+  },
+});
+export default App;
