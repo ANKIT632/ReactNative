@@ -1,0 +1,29 @@
+import * as React from 'react'; : This imports the entire react module and assigns it to the React variable. 
+        The * is a wildcard that means to import everything from the module.
+
+{ View, Text, StyleSheet }: This uses destructuring to import the View, Text, and StyleSheet components from the react-native module.
+
+React.Component: is a base class for React components, and defines a set of methods and properties that are common to all components.
+When you define a new component, you typically extend React.Component to inherit its functionality.
+
+{ View, Text, StyleSheet }: This uses destructuring to import the View, Text, and StyleSheet components from the react-native module.
+
+View, Text, and StyleSheet are components provided by the react-native library. View is a container that provides a way to structure and group components, 
+Text is used for displaying text, and StyleSheet is used for styling components.
+
+eg 
+here we use A or any thing mostly use React
+import A from 'react';
+import MyComponent from './MyComponent';
+
+class App extends A.Component {
+  render() {
+    return (
+      <div>
+        <MyComponent />
+      </div>
+    );
+  }
+}
+
+export default App;
