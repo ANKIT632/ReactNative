@@ -1,0 +1,31 @@
+import React from 'react';
+import {Text,View,StyleSheet} from 'react-native';
+
+const Sc=({name,sname})=>{
+
+return(
+  <View>
+  <Text>{name} </Text>
+   <Text>{sname} </Text>
+  </View>
+);
+}
+
+function App(){
+  return (
+    <View style={styles.S}> <Sc name="ankit" sname="gupta"/>
+      <Sc name="a" sname="k"/> 
+
+    </View>
+   
+    );
+}
+
+const styles={
+  S:{
+    backgroundColor:"skyblue"
+  }
+}
+export default App;
+
+
