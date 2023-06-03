@@ -21,11 +21,40 @@ function App(){
     );
 }
 
+//----------------------------------------------------
 const styles={
   S:{
     backgroundColor:"skyblue"
   }
 }
+
+//---------------------------or----------------------------------
+
+const styles=StyleSheet.create({
+  S:{
+    backgroundColor:"skyblue",
+
+  }
+});
+
 export default App;
+
+//-------------------------------------------------------------------------------
+NOte:
+When using StyleSheet.create, the styles object is processed by the React Native runtime and optimized for performance.
+It creates a StyleSheet object with unique IDs for each style declaration, which allows for efficient styling and rendering.
+Using a plain JavaScript object for styles, as shown in the second snippet, does not involve the optimizations performed by StyleSheet.create. 
+While it may be suitable for small-scale or simple applications, it can potentially impact performance in larger applications.
+The benefits of using StyleSheet.create include:
+
+Improved performance: 
+The runtime optimizations result in faster style application and rendering.
+
+Debugging:
+StyleSheet.create provides meaningful error messages if there are any style-related issues.
+
+Code organization:
+The styles are defined separately and can be easily reused across components.
+
 
 
