@@ -1,0 +1,51 @@
+import React from 'react';
+import {Text,View,StyleSheet} from 'react-native';
+
+
+const Sc=(props)=>{
+return(
+  <View>
+  <Text>{props.name} </Text>
+   <Text>{props.sname} </Text>
+  </View>
+);
+}
+
+
+------------------------oR destructuring---------------------------------
+
+const Sc=(props)=>{
+   const {name,sname}=props;
+return(
+  <View>
+  <Text>{name} </Text>
+   <Text>{sname} </Text>
+  </View>
+);
+}
+
+-------------------------or------------------------------------------
+
+const Sc=({name,sname})=>{
+return(
+  <View>
+  <Text>{name} </Text>
+   <Text>{sname} </Text>
+  </View>
+);
+}
+
+function App(){
+  return (
+    <View> <Sc name="ankit" sname="gupta"/> 
+
+    </View>
+   
+    );
+}
+
+export default App;
+//-------------------------------------------------------or-------------------------------------------------------------------------------------------------------------
+
+
+
