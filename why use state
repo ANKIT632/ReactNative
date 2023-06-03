@@ -1,0 +1,55 @@
+import React from 'react';
+import {Text,View,StyleSheet,Button} from 'react-native';
+
+
+function App(){
+  let name="ankit";
+  return (
+   <View> 
+     { name ? <Text>{name}</Text> :<Text>enter Name</Text>}
+
+
+     <Button
+       title="change name"
+       color="red"
+       onPress={()=>{
+         name="ankit gupta";
+       }
+
+       }
+     />
+   </View>
+   
+    );
+}
+
+export default App;
+
+// after click  button not show change name (page are no re render).
+
+// this problem solve by state -------------------------------------------------------------------------------------------------------------
+
+import React ,{useState}from 'react';
+import {Text,View,StyleSheet,Button} from 'react-native';
+
+
+function App(){
+  const [name,updateVal]=useState("ankit");
+  return (
+   <View> 
+     { name ? <Text>{name}</Text> :<Text>enter Name</Text>}
+
+
+     <Button
+       title="change name"
+       color="red"
+       onPress={()=>{
+         updateVal("")
+       }
+
+       }
+     />
+   </View>
+   
+    );
+}
