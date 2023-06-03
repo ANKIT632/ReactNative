@@ -1,0 +1,25 @@
+import React from 'react';
+import {Text,View,StyleSheet} from 'react-native';
+
+const Sc=()=>{
+return(
+  <View>
+  <Text> Ankit</Text>
+   <Text> Gupta</Text>
+  </View>
+);
+}
+
+function App(){
+  return (
+    <View> <Sc/> 
+    
+     { Sc()}
+    </View>
+   
+    );
+}
+
+export default App;
+
+
