@@ -43,7 +43,7 @@ function App(){
      <Button
        title="change name"
        color="red"
-       onPress={()=>{
+       onPress={()=>{ 
          updateVal("")
        }
 
