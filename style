@@ -4,7 +4,7 @@ import {Text,View,StyleSheet} from 'react-native';
 const Sc=({name,sname})=>{
 
 return(
-  <View>
+  <View> 
   <Text>{name} </Text>
    <Text>{sname} </Text>
   </View>
